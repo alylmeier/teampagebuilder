@@ -30,7 +30,7 @@ function generate(role) {
   } else {
     console.log(team);
     generateCard();
-    generatePage();
+    buildHTML();
   }
 }
 
@@ -76,7 +76,7 @@ function generateCard() {
   }
 }
 
-function generatePage() {
+function buildHTML() {
   fs.writeFile(
     "./dist/output.html",
     `
@@ -100,7 +100,10 @@ function generatePage() {
 </body>
 </html>
   `,
-    (err) => (err ? console.error(err) : console.log("HTML file created!"))
+    (err) =>
+      err
+        ? console.error(err)
+        : console.log("Team HTML created. Check your dist folder.")
   );
 }
 
