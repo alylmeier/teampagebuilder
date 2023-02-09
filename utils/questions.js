@@ -10,6 +10,12 @@ const initQuestions = [
 const engineerQuestions = [
   {
     type: "input",
+    message:
+      "Please enter their job title as you wish it to appear on the page",
+    name: "title",
+  },
+  {
+    type: "input",
     message: "What is the employee's name?",
     name: "name",
   },
@@ -33,6 +39,12 @@ const engineerQuestions = [
 const managerQuestions = [
   {
     type: "input",
+    message:
+      "Please enter their job title as you wish it to appear on the page",
+    name: "title",
+  },
+  {
+    type: "input",
     message: "What is the employee's name?",
     name: "name",
   },
@@ -53,6 +65,12 @@ const managerQuestions = [
   },
 ];
 const internQuestions = [
+  {
+    type: "input",
+    message:
+      "Please enter their job title as you wish it to appear on the page",
+    name: "title",
+  },
   {
     type: "input",
     message: "What is the employee's name?",
