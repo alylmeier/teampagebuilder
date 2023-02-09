@@ -26,7 +26,7 @@ const engineerQuestions = [
   {
     type: "input",
     message: "What is their GitHub user name?",
-    name: "ghuser",
+    name: "misc",
   },
 ];
 
@@ -49,7 +49,7 @@ const managerQuestions = [
   {
     type: "input",
     message: "What is their office number?",
-    name: "office",
+    name: "misc",
   },
 ];
 const internQuestions = [
@@ -71,7 +71,7 @@ const internQuestions = [
   {
     type: "input",
     message: "What school do they attend?",
-    name: "school",
+    name: "misc",
   },
 ];
 
