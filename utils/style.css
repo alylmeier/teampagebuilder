@@ -1,4 +1,5 @@
-.card-body{
+.card{
+    color:brown;
     padding: 1.5em .5em .5em;
     border-radius: 2em !important;
     text-align: center;
