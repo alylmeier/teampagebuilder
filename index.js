@@ -1,6 +1,7 @@
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
+function Index() {}
 let teamHTML = "";
 const team = [];
 const {
@@ -10,7 +11,6 @@ const {
   internQuestions,
 } = require("./utils/questions");
 const fs = require("fs");
-//const makeTeampage = require("./dist/output.html");
 const inquirer = require("inquirer");
 
 function init() {
@@ -62,7 +62,7 @@ function generateIntern() {
 
 function generateCard() {
   for (let i = 0; i < team.length; i++) {
-    teamHTML += `<div class="card mx-3 my-5" style="width: 18rem;">
+    teamHTML += `<div class="card" style="width: 18rem;">
           <div class="card-body bg-success text-light">
             <h5 class="card-title"><strong>${team[i].name}</strong></h5>
             <p class="card-text">${team[i].title}</p>
@@ -87,7 +87,7 @@ function buildHTML() {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="\style.css">
+  <link rel="stylesheet" href="./utils/style.css">
   <title>Team Profile</title>
 </head>
 <body>
@@ -107,6 +107,5 @@ function buildHTML() {
   );
 }
 
-//module.exports = Generate;
 // Function call to initialize app
 init();
